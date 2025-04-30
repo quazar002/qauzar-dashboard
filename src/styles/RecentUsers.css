@@ -1,0 +1,82 @@
+.recent-users-card {
+    background: white;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+  }
+  
+  .recent-users-header h3 {
+    font-size: 1rem; /* smaller */
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .recent-users-header p {
+    font-size: 0.75rem; /* smaller */
+    color: #6b7280;
+    margin-top: 4px;
+  }
+  
+  .recent-users-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    flex-grow: 1;
+  }
+  
+  .recent-user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .user-avatar {
+    width: 36px; /* slightly smaller avatar */
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-name {
+    font-weight: 600;
+    color: #111827;
+    font-size: 0.9rem; /* smaller */
+  }
+  
+  .user-email {
+    font-size: 0.75rem; /* smaller */
+    color: #6b7280;
+  }
+  
+  .user-meta {
+    text-align: right;
+    font-size: 0.75rem; /* smaller */
+    color: #6b7280;
+    line-height: 1.4;
+  }
+  
+  .user-time {
+    font-weight: 500;
+  }
+  
+  .see-all-customers {
+    margin-top: auto;
+    font-size: 0.8rem; /* smaller */
+    color: #6b7280;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 1rem;
+    border-top: 1px solid #f3f4f6;
+    cursor: pointer;
+  }
+  

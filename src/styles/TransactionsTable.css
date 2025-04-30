@@ -1,0 +1,160 @@
+.transactions-card {
+  background: white;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.transactions-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.transactions-header p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.see-all-link {
+  font-size: 0.85rem;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.transactions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+  border-top: 1px solid #f3f4f6;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.transaction-item:first-child {
+  border-top: none;
+}
+
+.transaction-item:hover {
+  background-color: #f9fafb;
+}
+
+/* Left section */
+.transaction-left {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex: 2;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background-color: gray;
+  border-radius: 999px;
+  margin-right: 6px;
+}
+
+.badge.normal {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.badge.normal .badge-dot {
+  background-color: #3b82f6;
+}
+
+.badge.danger {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.badge.danger .badge-dot {
+  background-color: #ef4444;
+}
+
+.transaction-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.transaction-title {
+  font-weight: 600;
+  color: #111827;
+  font-size: 1rem;
+}
+
+.transaction-subtitle {
+  font-size: 0.85rem;
+  color: #6b7280;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 220px;
+}
+
+/* Center section */
+.transaction-center {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  flex: 2;
+}
+
+.transaction-price-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.transaction-price-date .price {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.transaction-price-date .date {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.transaction-status-text {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Right section */
+.transaction-actions {
+  margin-left: auto;
+  font-size: 1.5rem;
+  color: #9ca3af;
+}

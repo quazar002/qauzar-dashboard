@@ -1,0 +1,101 @@
+.navbar {
+  height: 72px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 1px solid #e5e7eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-center {
+  flex: 2;
+  justify-content: center;
+}
+
+.navbar-right {
+  flex: 1;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  font-family: 'Georgia', serif;
+}
+
+.navbar-search {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.navbar-icon {
+  font-size: 20px;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.navbar-icon-wrapper {
+  position: relative;
+}
+
+.navbar-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #6366f1;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.navbar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+}
+
+.navbar-menu-icon {
+  font-size: 22px;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #4b5563;
+}
+@media (max-width: 768px) {
+  .navbar-center {
+    flex: 2;
+    justify-content: flex-start;
+  }
+
+  .navbar-search {
+    max-width: 100%;
+  }
+}
