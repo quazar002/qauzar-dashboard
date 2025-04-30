@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import '../styles/LineChartCard_temp.css';
+import '../styles/LineChartCard.css';
 
 export default function LineChartCard() {
   const [selectedRange, setSelectedRange] = useState('12M');
